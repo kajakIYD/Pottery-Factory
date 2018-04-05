@@ -17,118 +17,213 @@
    <property name="enabled">
     <bool>true</bool>
    </property>
-   <layout class="QGridLayout" name="gridLayout">
-    <item row="3" column="0">
-     <widget class="QLabel" name="label_6">
-      <property name="font">
-       <font>
-        <pointsize>12</pointsize>
-       </font>
-      </property>
-      <property name="text">
-       <string>SP</string>
-      </property>
-     </widget>
-    </item>
-    <item row="8" column="1">
-     <widget class="QLabel" name="label_5">
-      <property name="font">
-       <font>
-        <pointsize>12</pointsize>
-       </font>
-      </property>
-      <property name="text">
-       <string>t</string>
-      </property>
-     </widget>
-    </item>
-    <item row="3" column="1">
-     <widget class="QDoubleSpinBox" name="w_changeSp"/>
-    </item>
-    <item row="2" column="1">
-     <widget class="QDoubleSpinBox" name="w_changeMax_u"/>
-    </item>
-    <item row="2" column="0">
-     <widget class="QLabel" name="label_4">
-      <property name="font">
-       <font>
-        <pointsize>12</pointsize>
-       </font>
-      </property>
-      <property name="text">
-       <string>Max_u</string>
-      </property>
-     </widget>
-    </item>
-    <item row="0" column="1">
-     <widget class="QDoubleSpinBox" name="w_changeKr"/>
-    </item>
-    <item row="1" column="0">
-     <widget class="QLabel" name="label_2">
-      <property name="font">
-       <font>
-        <pointsize>12</pointsize>
-       </font>
-      </property>
-      <property name="text">
-       <string>Ti</string>
-      </property>
-     </widget>
-    </item>
-    <item row="0" column="0">
-     <widget class="QLabel" name="label_3">
-      <property name="font">
-       <font>
-        <pointsize>12</pointsize>
-       </font>
-      </property>
-      <property name="text">
-       <string>Kr</string>
-      </property>
-     </widget>
-    </item>
-    <item row="8" column="2">
-     <widget class="QSlider" name="horizontalSlider">
-      <property name="minimum">
-       <number>10</number>
-      </property>
-      <property name="maximum">
-       <number>5000</number>
-      </property>
-      <property name="pageStep">
-       <number>10</number>
-      </property>
-      <property name="orientation">
-       <enum>Qt::Horizontal</enum>
-      </property>
-     </widget>
-    </item>
-    <item row="1" column="1">
-     <widget class="QDoubleSpinBox" name="w_changeTi"/>
-    </item>
-    <item row="7" column="1">
-     <widget class="QDoubleSpinBox" name="w_changeTi_2"/>
-    </item>
-    <item row="0" column="2" rowspan="4">
-     <widget class="QCustomPlot" name="Plot1" native="true"/>
-    </item>
-    <item row="4" column="0">
-     <widget class="QPushButton" name="pushButton">
-      <property name="text">
-       <string>Start</string>
-      </property>
-     </widget>
-    </item>
-    <item row="5" column="1">
-     <widget class="QDoubleSpinBox" name="w_changeKr_2"/>
-    </item>
-    <item row="6" column="1">
-     <widget class="QDoubleSpinBox" name="w_changeKr_3"/>
-    </item>
-    <item row="4" column="2" rowspan="4">
-     <widget class="QCustomPlot" name="Plot2" native="true"/>
-    </item>
-   </layout>
+   <widget class="QLabel" name="label_6">
+    <property name="geometry">
+     <rect>
+      <x>11</x>
+      <y>159</y>
+      <width>22</width>
+      <height>24</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>12</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>SP</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_5">
+    <property name="geometry">
+     <rect>
+      <x>98</x>
+      <y>384</y>
+      <width>16</width>
+      <height>24</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>12</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>t</string>
+    </property>
+   </widget>
+   <widget class="QDoubleSpinBox" name="w_changeSp">
+    <property name="geometry">
+     <rect>
+      <x>98</x>
+      <y>159</y>
+      <width>64</width>
+      <height>25</height>
+     </rect>
+    </property>
+    <property name="maximum">
+     <double>2000.000000000000000</double>
+    </property>
+   </widget>
+   <widget class="QDoubleSpinBox" name="w_changeMax_u">
+    <property name="geometry">
+     <rect>
+      <x>98</x>
+      <y>114</y>
+      <width>64</width>
+      <height>25</height>
+     </rect>
+    </property>
+    <property name="maximum">
+     <double>1000.000000000000000</double>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_4">
+    <property name="geometry">
+     <rect>
+      <x>11</x>
+      <y>114</y>
+      <width>58</width>
+      <height>24</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>12</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>Max_u</string>
+    </property>
+   </widget>
+   <widget class="QDoubleSpinBox" name="w_changeKr">
+    <property name="geometry">
+     <rect>
+      <x>98</x>
+      <y>24</y>
+      <width>64</width>
+      <height>25</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_2">
+    <property name="geometry">
+     <rect>
+      <x>11</x>
+      <y>69</y>
+      <width>17</width>
+      <height>24</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>12</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>Ti</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_3">
+    <property name="geometry">
+     <rect>
+      <x>11</x>
+      <y>24</y>
+      <width>19</width>
+      <height>24</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>12</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>Kr</string>
+    </property>
+   </widget>
+   <widget class="QSlider" name="horizontalSlider">
+    <property name="geometry">
+     <rect>
+      <x>169</x>
+      <y>387</y>
+      <width>611</width>
+      <height>18</height>
+     </rect>
+    </property>
+    <property name="minimum">
+     <number>10</number>
+    </property>
+    <property name="maximum">
+     <number>5000</number>
+    </property>
+    <property name="singleStep">
+     <number>100</number>
+    </property>
+    <property name="pageStep">
+     <number>10</number>
+    </property>
+    <property name="orientation">
+     <enum>Qt::Horizontal</enum>
+    </property>
+   </widget>
+   <widget class="QDoubleSpinBox" name="w_changeTi">
+    <property name="geometry">
+     <rect>
+      <x>98</x>
+      <y>69</y>
+      <width>64</width>
+      <height>25</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QCustomPlot" name="Plot1" native="true">
+    <property name="geometry">
+     <rect>
+      <x>169</x>
+      <y>24</y>
+      <width>637</width>
+      <height>160</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton">
+    <property name="geometry">
+     <rect>
+      <x>11</x>
+      <y>204</y>
+      <width>80</width>
+      <height>25</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Start</string>
+    </property>
+   </widget>
+   <widget class="QCustomPlot" name="Plot2" native="true">
+    <property name="geometry">
+     <rect>
+      <x>169</x>
+      <y>204</y>
+      <width>637</width>
+      <height>160</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_2">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>240</y>
+      <width>80</width>
+      <height>25</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Krok</string>
+    </property>
+   </widget>
   </widget>
   <widget class="QMenuBar" name="menuBar">
    <property name="geometry">
@@ -136,7 +231,7 @@
      <x>0</x>
      <y>0</y>
      <width>817</width>
-     <height>20</height>
+     <height>25</height>
     </rect>
    </property>
   </widget>

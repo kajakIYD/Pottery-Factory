@@ -10,7 +10,9 @@ public:
     double A;
     double c;
     double h = 10;
-    double simulate(double qwe, double dt);
+    double G=0;
+    double T=20;
+    double simulate(double qwe, double dt, double Tp);
 
 
 };

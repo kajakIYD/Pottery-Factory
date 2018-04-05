@@ -22,8 +22,9 @@ class PI
         double Kr;
         double Ti;
         double e0;
-        double integral;
-        double u;
+        double integral=0;
+        double u=0;
+        double u_i=0;
         double setpoint;
     private:
 
