@@ -1,14 +1,14 @@
 #include "obiekt.h"
 
-obiekt::obiekt(double A, double c):
-    A(A),
-    c(c)
+obiekt::obiekt()
 {
 
 }
 
-double obiekt::simulate(double qwe, double dt)
+double obiekt::simulate(double qwe, double dt, double setpoint)
 {
-    h += (1/A)*(qwe - c*h) * dt;
-    return h;
+    Tp = setpoint;
+    double G =  1/(M*c)*((n+1)*qwe*Ro_s*c_s*(Tp-T) - m*v*c*(T-T0));
+    T = T + G*dt;
+    return T;
 }

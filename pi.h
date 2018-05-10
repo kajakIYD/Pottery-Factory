@@ -26,7 +26,7 @@ class PI
         double u;
         double setpoint;
     private:
-
+        double u_i;
 };
 
 #endif // PI_H

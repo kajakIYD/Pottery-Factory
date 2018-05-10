@@ -27,8 +27,8 @@ double PI::simulate(double pv, double dt)
 
     // integral term
     // anti windup
-    integral = (u >= max_u || u <= min_u) ? 0.0 : integral + e * dt / Ti;    // ?????
-    double u_i = Kr * integral;
+    integral = (u >= max_u || u <= min_u) ? 0.0 : e * dt / Ti;
+    u_i += Kr * integral;
 
     double u = u_p + u_i;      // total output
 

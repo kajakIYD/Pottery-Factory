@@ -6,7 +6,7 @@
 
 QT       += core gui
 
-greaterThan(QT_MAJOR_VERSION, 4): QT += widgets
+greaterThan(QT_MAJOR_VERSION, 4): QT += widgets printsupport
 
 TARGET = potteryFactory
 TEMPLATE = app
@@ -25,29 +25,27 @@ DEFINES += QT_DEPRECATED_WARNINGS
 
 SOURCES += \
         main.cpp \
-        mainwindow.cpp \
-    main.cpp \
     mainwindow.cpp \
     obiekt.cpp \
     observer.cpp \
     pi.cpp \
     qcustomplot.cpp \
     regulator.cpp \
-    subject.cpp
+    subject.cpp \
+    i2cdevice.cpp
 
 HEADERS += \
         mainwindow.h \
-    mainwindow.h \
     obiekt.h \
     observer.h \
     pi.h \
     qcustomplot.h \
     regulator.h \
-    subject.h
+    subject.h \
+    i2cdevice.h
 
 FORMS += \
-        mainwindow.ui \
-    mainwindow.ui
+        mainwindow.ui
 
 SUBDIRS += \
     potteryFactory.pro
