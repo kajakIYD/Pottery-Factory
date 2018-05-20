@@ -1,10 +1,9 @@
 #ifndef SUBJECT_H
 #define SUBJECT_H
-
 #include <iostream>
 #include <vector>
 #include "mainwindow.h"
-
+//kom
 class Subject
 {
     std::vector<MainWindow*> obs_list;
